@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Russo+One&family=Zen+Kurenaido&display=swap');
+#root, html , body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+    height: 100%;
+    background-color: #002333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+    background-color: #002333 ;
+    width:40%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    box-shadow: -10px 10px #00FF84;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading{
+    display: flex;
+    align-items: center;
+    height: 580px;
+    color: #fff;
+    font-family: 'Zen Kurenaido', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+    padding: 10px;
+ border: none;
+    font-family: monospace;
+    font-weight: 700;
+    color: #fff;
+    background-color:#002333 ;
+    border: 2px solid #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover{
+    background-color: #00FF84;
+    border: 2px solid #00FF84;
+    color: #002333;
 }
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+    .card{
+        width: 80%;
+        height:   30%;
+    }
+}
+
